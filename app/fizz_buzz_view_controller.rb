@@ -50,11 +50,13 @@ class FizzBuzzViewController < UIViewController
       newcolor = UIColor.blueColor
     when 3
       newcolor = UIColor.yellowColor
+    when 4
+      newcolor = UIColor.whiteColor
     end
 
     @view_handle.backgroundColor = newcolor
 
-    @color_index = (@color_index +1) % 4
+    @color_index = (@color_index +1) % 5
   end
 
   def self.fbcalc(this_number)
