@@ -8,7 +8,7 @@ describe "FizzBuzz calculator Function" do
     FizzBuzzViewController.fbcalc(5).should == 'buzz'
   end
 
-  (1..10).each do |this_number|
+  (1..100).each do |this_number|
     if this_number % 15 == 0
       it 'should return buzz for multiples of 15' do
          FizzBuzzViewController.fbcalc(this_number).should == 'fizzbuzz'
